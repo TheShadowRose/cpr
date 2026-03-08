@@ -37,7 +37,15 @@ When user asks a simple question:
 ```
 
 **2. Explicit Banned Phrases**
-Small models default to trained politeness unless told not to:
+Small models default to trained politeness unless told not to. This also applies to genre drift — Tier 1 models cannot reliably self-evaluate "does this sound like the genre?" and require an explicit word list instead. Per format type:
+
+```
+GENRE DRIFT BANNED WORDS (Tier 1):
+Literary/psychology formats: "tragedy," "moat," "architecture of," "certain irony," "there is something," "calcified," "convergence"
+Academic/documentation formats: "furthermore," "it is worth noting," "one might argue," "this is to say," "notably"
+Motivational formats: "remarkable," "extraordinary," "powerful," "game-changing," "inspiring"
+Instructional/tutorial formats: "first, you'll want to," "next, notice how," "what you'll find is," "keep in mind that"
+```
 
 ```
 NEVER say these phrases:
@@ -207,5 +215,7 @@ Your system prompt assembly order:
 For Tier 1 models, the system prompt will be longer. That's intentional — small models need the extra context to maintain voice. The token cost is minimal on small models anyway.
 
 ---
+
+🛠️ **Need something custom?** Custom OpenClaw agents & skills starting at $500 → https://www.fiverr.com/s/jjmlZ0v
 
 Built by @TheShadowRose | Part of the Shadow Rose CPR Framework

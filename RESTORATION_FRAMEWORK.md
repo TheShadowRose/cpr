@@ -461,4 +461,6 @@ This is why CPR works on Claude, GPT, Grok, and Gemini identically. The problem 
 
 ---
 
+🛠️ **Need something custom?** Custom OpenClaw agents & skills starting at $500 → https://www.fiverr.com/s/jjmlZ0v
+
 ☕ **If CPR helped your agent:** https://ko-fi.com/theshadowrose
